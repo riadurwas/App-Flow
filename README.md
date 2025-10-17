@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+Welcome to your CI/CD Pipeline Project
+Project info
 
-## Project info
+Title: End-to-End CI/CD Pipeline Implementation with Jenkins and DevOps Tools
 
-**URL**: https://lovable.dev/projects/78c701d3-37d6-45ec-8b32-08d0f2db7d1d
+Project Overview
 
-## How can I edit this code?
+This project demonstrates the setup of a complete CI/CD pipeline using Jenkins and multiple DevOps tools to automate building, testing, deployment, and monitoring.
+It shows how software moves from code to production with full automation, ensuring quality, speed, and reliability.
 
-There are several ways of editing your application.
+The pipeline includes version control, build automation, code analysis, artifact storage, deployment to servers, monitoring, and notifications — all integrated into one flow.
 
-**Use Lovable**
+Tools & Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/78c701d3-37d6-45ec-8b32-08d0f2db7d1d) and start prompting.
+Version Control: Git, GitHub
 
-Changes made via Lovable will be committed automatically to this repo.
+CI/CD Automation: Jenkins
 
-**Use your preferred IDE**
+Build Tool: Apache Maven
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Code Quality: Checkstyle, SonarQube
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Artifact Repository: Nexus
 
-Follow these steps:
+Configuration & Deployment: Ansible
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Infrastructure: AWS EC2 Instances
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Monitoring & Visualization: Prometheus, Grafana
 
-# Step 3: Install the necessary dependencies.
-npm i
+Log Management: Splunk
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Alerts & Collaboration: Slack
 
-**Edit a file directly in GitHub**
+Workflow Summary
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Developer pushes code to GitHub.
 
-**Use GitHub Codespaces**
+Jenkins automatically triggers and runs the build.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Maven compiles, tests, and checks code quality.
 
-## What technologies are used for this project?
+The built file is stored in Nexus.
 
-This project is built with:
+Ansible deploys it to servers (Dev → Stage → Prod).
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Prometheus and Grafana monitor performance.
 
-## How can I deploy this project?
+Splunk collects and analyzes logs.
 
-Simply open [Lovable](https://lovable.dev/projects/78c701d3-37d6-45ec-8b32-08d0f2db7d1d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Slack sends instant notifications of build and deployment results.
